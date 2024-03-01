@@ -1,5 +1,5 @@
 def in_order(nums):
-    # Type your code here.
+    print("ballz")
     
 if __name__ == '__main__':
     # Test out-of-order example
