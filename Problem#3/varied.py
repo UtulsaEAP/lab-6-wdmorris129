@@ -1,13 +1,13 @@
 def process_input(input_string):
-      # Split into separate strings
-
+    # Split into separate strings
+  userSplt = user_input.split()
     # Convert strings to floats
-    
+  userFlt = float(userSplt)
 
     # Get max and average
-    max_value = 
-    average_value = 
-    return max_value, average_value
+  max_value = sum(userFlt) / len(userFlt)
+  average_value = max(userFlt)
+  return max_value, average_value
 
 if __name__ == "__main__":
     # User inputs string w/ numbers
