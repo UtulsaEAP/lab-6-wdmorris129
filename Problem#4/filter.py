@@ -5,7 +5,7 @@ def process_and_print(input_string):
     input_data = [int(num) for num in inputSplt]
     newList = [i for i in input_data if i < 0]
     
-    print(newList)       
+    print(newList, reverse = True)
 
  
   
