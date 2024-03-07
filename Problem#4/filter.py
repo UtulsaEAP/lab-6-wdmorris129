@@ -1,17 +1,17 @@
 def process_and_print(input_string):
-      # Split into separate strings
-    inputSplt =  input_string.split(' ')
-    # Convert strings to integers and filter out negative values
-    input_data = [int(num) for num in inputSplt]
-    newList = [i for i in input_data if i < 0]
+  # Split into separate strings
+  inputSplt =  input_string.split(' ')
+  # Convert strings to integers and filter out negative values
+  input_data = [int(num) for num in inputSplt]
+  newList = [i for i in input_data if i < 0]
     
-    newList.sort(reverse=True)
+  newList.sort(reverse=True)
 
-    print(newList)
+  print(newList)
 
  
   
-    # Print sorted integers
+  # Print sorted integers
     
 
 if __name__ == "__main__":
