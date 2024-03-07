@@ -1,6 +1,6 @@
 def process_input(input_string):
   # Split into separate strings
-  userSplt = user_input.split(' ')
+  userSplt = input_string.split(' ')
     
   # Convert strings to floats
   userFlt = [float(num) for num in userSplt]
