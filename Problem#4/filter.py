@@ -1,10 +1,13 @@
 def process_and_print(input_string):
       # Split into separate strings
-
+    inputSplt =  user_input.split(' ')
     # Convert strings to integers and filter out negative values
-    input_data = user_input
+    input_data = [int(num) for num in inputSplt]
+    newList = [i for i in input_data if i < 0]
+    
+    print(newList)       
 
-    # Sort integers in reverse order
+ 
   
     # Print sorted integers
     
