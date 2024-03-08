@@ -8,7 +8,7 @@ def process_and_print(input_string):
   newList.sort(reverse=True)
 
   resultList = ' '.join(str(x) for x in newList)
-  print('{a} '.format(a = resultList, end=''))
+  print('{a} '.format(a = resultList),end='')
   # print(resultList, end='')
 
 if __name__ == "__main__":
