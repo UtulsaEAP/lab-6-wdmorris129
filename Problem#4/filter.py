@@ -1,3 +1,5 @@
+"""Will Morris, Friday Afternoon"""
+
 def process_and_print(input_string):
   # Split into separate strings
   inputSplt =  input_string.split(' ')
