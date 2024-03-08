@@ -3,8 +3,8 @@
 def filter_and_print_range(input_list, min_val, max_val):
     newList = [i for i in input_list if min_val <= i <= max_val]
     outputStr = ','.join(map(str, newList)) 
-    print(outputStr,end='')
-
+    # print(outputStr,end='')
+    print("{a},".format(a=outputStr),end='')
 
 if __name__ == '__main__':
     # Get input for the list of integers
