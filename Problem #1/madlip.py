@@ -8,7 +8,7 @@ def food_input():
     madLib[1] = tokens[1]
     madLib[2] = tokens[0]
 
-    newLine = ' '.join([str(elem) for elem in madLib])
+    newLine = ' '.join([str(i) for i in madLib])
 
     print(newLine)
 
