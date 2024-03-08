@@ -1,15 +1,17 @@
 def filter_and_print_range(input_list, min_val, max_val):
-    
+    newList = [i for i in input_list if min_val < i < max_val]
     print(newList)
 
 if __name__ == '__main__':
     # Get input for the list of integers
     user_input = input("Enter a space-separated string of numbers: ")
-    integer_list = user_input
+    integer_list = [int(num) for num in user_input.split()]
 
     # Get input for the range (min and max values)
-    user_input = input("Enter the min and max values separated by a space: ")
+    input_range = input("Enter the min and max values separated by a space: ")
     min_val, max_val = user_input
+    min_val, max_val = map(int, input_range.split())
 
     # Call the function to filter and print the numbers in the given range
-    newList = [i for i in user_input if min_val < i < max_val]
+    filter_and_print_range(integer_list, min_val, max_val)
+    
