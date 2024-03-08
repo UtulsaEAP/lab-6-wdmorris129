@@ -7,11 +7,9 @@ def process_and_print(input_string):
     
   newList.sort(reverse=True)
 
-  print(newList)
+  resultList = ' '.join(map(str, newList))
+  print(resultList)
 
- 
-  
-  # Print sorted integers
     
 
 if __name__ == "__main__":
