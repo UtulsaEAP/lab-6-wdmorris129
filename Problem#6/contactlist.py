@@ -1,11 +1,11 @@
 def process_user_contacts(user_input):
     user_contacts = user_input
-
- 
+    
     user_input = user_input
     tokens = user_input
-
+    contactList = user_input.split("")
     # Put word pairs into a dictionary
+    contactBook = {}
     
     # Get contact name from input, output contact's phone number
     contact_name = input("Enter the contact name: ")
