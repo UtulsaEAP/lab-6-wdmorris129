@@ -1,6 +1,10 @@
+'''Will Morris, Friday Afternoon'''
+
 def filter_and_print_range(input_list, min_val, max_val):
     newList = [i for i in input_list if min_val <= i <= max_val]
-    print(newList)
+    outputStr = ','.join(map(str, newList)) 
+    print(outputStr)
+
 
 if __name__ == '__main__':
     # Get input for the list of integers
