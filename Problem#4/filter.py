@@ -7,7 +7,7 @@ def process_and_print(input_string):
     
   newList.sort(reverse=True)
 
-  resultList = '  '.join(map(str, newList))
+  resultList = ' '.join(map(str, newList))
   print(resultList)
 
     
