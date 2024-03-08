@@ -1,5 +1,6 @@
 def filter_and_print_range(input_list, min_val, max_val):
-    print("ballz")
+    
+    print(newList)
 
 if __name__ == '__main__':
     # Get input for the list of integers
@@ -11,4 +12,4 @@ if __name__ == '__main__':
     min_val, max_val = user_input
 
     # Call the function to filter and print the numbers in the given range
-   
+    newList = [i for i in user_input if min_val < i < max_val]
