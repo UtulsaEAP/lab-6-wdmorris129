@@ -1,5 +1,5 @@
 def filter_and_print_range(input_list, min_val, max_val):
-    newList = [i for i in input_list if min_val < i < max_val]
+    newList = [i for i in input_list if min_val <= i <= max_val]
     print(newList)
 
 if __name__ == '__main__':
