@@ -9,8 +9,7 @@ def process_and_print(input_string):
 
   resultList = ' '.join(str(x) for x in newList)
   print('{a} '.format(a = resultList))
-
-    
+  print(resultList, end='')
 
 if __name__ == "__main__":
     # User inputs string w/ numbers
