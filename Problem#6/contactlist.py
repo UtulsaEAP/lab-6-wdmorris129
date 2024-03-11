@@ -7,6 +7,8 @@ def process_user_contacts(user_input):
     contacts = dict(pair.split(',') for pair in user_input.split())
     if contact_name in contacts:
         print(contacts[contact_name])
+    else:
+        print("Contact not found.")
 
     
    
