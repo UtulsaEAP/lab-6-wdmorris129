@@ -4,7 +4,7 @@ def process_user_contacts(user_input):
     
     # Get contact name from input, output contact's phone number
     contact_name = input("Enter the contact name: ")
-    contacts = dict(pair.split(',') for pair in user_input.split())
+    contacts = dict(pair.split(',') or pair.split(" ") for pair in user_input.split())
     if contact_name in contacts:
         print(contacts[contact_name])
     else:
