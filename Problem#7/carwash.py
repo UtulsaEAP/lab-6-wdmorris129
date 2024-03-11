@@ -8,6 +8,9 @@ def calculate_car_wash_price(service_choice1, service_choice2):
     service_costs_list = []
 
     for services in services_selected_list:
+        if service in services:
+            services_selected_list.append(f'{services}-${services[service]}')
+
         
 
 
