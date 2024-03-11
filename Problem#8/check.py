@@ -1,5 +1,10 @@
 def in_order(nums):
-    print("ballz")
+
+    for i in range(1, len(nums)):
+        if nums[i] < nums[i-1]:
+            return False
+        return True
+
     
 if __name__ == '__main__':
     # Test out-of-order example
