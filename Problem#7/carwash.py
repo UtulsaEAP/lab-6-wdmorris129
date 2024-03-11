@@ -4,6 +4,12 @@ def calculate_car_wash_price(service_choice1, service_choice2):
     total = 0
    
    #type your code here 
+    services_selected_list = []
+    service_costs_list = []
+
+    for services in services_selected_list:
+        
+
 
     
 if __name__ == '__main__':
