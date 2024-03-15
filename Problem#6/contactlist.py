@@ -2,7 +2,14 @@
 def process_user_contacts(user_input):
  
     # Get contact name from input, output contact's phone number
-    contacts = dict(pair.split(',') or pair.split(" ") for pair in user_input.split())
+    # contacts = dict(pair.split(',') or pair.split(" ") for pair in user_input.split())
+    contacts = {}
+    for pair in user_input.split(','):
+        parts = pair.split()
+        if len(parts) == 2:
+            contacts[parts[0]] = parts[1]
+        else:
+            print(f"Ignoring invalid pair: {pair}")
     contact_name = input("Enter the contact name: ")
     if contact_name in contacts:
         print(contacts[contact_name])
