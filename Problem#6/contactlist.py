@@ -8,8 +8,7 @@ def process_user_contacts(user_input):
         parts = pair.split()
         if len(parts) == 2:
             contacts[parts[0]] = parts[1]
-        else:
-            print(f"Ignoring invalid pair: {pair}")
+    
     contact_name = input("Enter the contact name: ")
     if contact_name in contacts:
         print(contacts[contact_name])
